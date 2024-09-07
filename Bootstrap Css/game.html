@@ -40,15 +40,23 @@
                 <li><strong>Guess Chance: 5</strong></li>
                 <li><strong>Time: 30 second</strong></li>
             </ul>
-            <nav>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center">
-                    <div class="input-group input-group-sm mb-3" style="max-width: 200px;">
-                        <span class="input-group-text" id="inputGroup-sizing-sm"><strong>Number Guess</strong></span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                    <a href="game.html" class="btn btn-outline-secondary btn-lg px-4"><span>Submit</span></a>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center">
+                <div class="input-group input-group-sm mb-3" style="max-width: 200px;">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"><strong>Number Guess</strong></span>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
-            </nav>
+            </div>
+            <a href="game.html" class="btn btn-outline-secondary btn-lg px-4"><span><strong>Submit</strong></span></a>
+            <div class="card text-center">
+                <div class="card-header">
+                    Message
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title ">Wrong Answer!</h5>
+                    <p class="card-text">Enter a larger number.</p>
+                    <a href="game.html" class="btn btn-primary">Try Again</a>
+                </div>
+            </div>
         </div>
     </div>
     <!--Footer-->
