@@ -13,7 +13,7 @@
     <!--Bootstrap Navbar-->
     <nav class="navbar  navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">NGG</a>
+            <a class="navbar-brand text-white"><strong>NGG</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,14 +35,20 @@
 
         <h2 class="display-5 fw-bold text-body-emphasis">Game Started</h2>
         <div class="col-lg-6 mx-auto">
-            <ul></ul>
-            <p class="lead mb-4">
-                Guess Chance: 
-                Time: 30 second
-            </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                
-            </div>
+            <ul class="txt-game">
+                <li><strong>Level: 1</strong></li>
+                <li><strong>Guess Chance: 5</strong></li>
+                <li><strong>Time: 30 second</strong></li>
+            </ul>
+            <nav>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center">
+                    <div class="input-group input-group-sm mb-3" style="max-width: 200px;">
+                        <span class="input-group-text" id="inputGroup-sizing-sm"><strong>Number Guess</strong></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <a href="game.html" class="btn btn-outline-secondary btn-lg px-4"><span>Submit</span></a>
+                </div>
+            </nav>
         </div>
     </div>
     <!--Footer-->

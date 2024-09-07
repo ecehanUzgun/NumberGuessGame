@@ -16,16 +16,19 @@ body {
 .btn-outline-secondary {
     display: inline-block;
     border-radius: 4px;
-    background-color:  #0066cc;
+    background-color: #0066cc;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    /*padding: 20px; */
+    width: 100px;
+    height: 40px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    margin-bottom: 20px;
 }
 
 .btn-outline-secondary span {
@@ -45,12 +48,35 @@ body {
 }
 
     .btn-outline-secondary:hover span {
-        padding-right: 25px;
+        padding-right: 15px;
     }
 
 .btn-outline-secondary:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Game */
+
+div ul li {
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+} 
+
+.input-group-text {
+    background-color: dimgray;
+    color: white;
 }
 
 /*Google Font*/
