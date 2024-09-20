@@ -43,42 +43,47 @@ btnPlay.onclick = function (e) {
     const playerName = document.getElementById("playerName").value; //inputtaki deðeri alacak id
 
     if (playerName) {
-        const player = new Player(playerList.length+1, playerName, 1); //id,playerName,level
-        playerList.push(player);
-        WebUI.AddPlayer(player);
+        //const player = new Player(playerList.length+1, playerName, 1); //id,playerName,level
+        //playerList.push(player);
+        //WebUI.AddPlayer(player);
+        window.location.href = "game.html";
     }
     else {
-        alert("Please enter Nickname!");
+        alert("Please enter your nickname!");
         return false;
     }
 }
 
 //game.html
-let guess = 1;
-const guessChance = document.getElementById("guessChance");
+let guessChance = 5;
+//const randomNumber = Math.floor(Math.random() * ((player.level * 10) + 1)) + 1;
+const randomNumber = Math.floor(Math.random() * 10)+1; // between 1 and 10 random number
+const guessChance = document.getElementById("liGuessChance");
+const btnSubmit = document.getElementById("btnSubmit");
 
-const GuessRandomNumber = {
+//const GuessRandomNumber = {
 
-    let randomNumber = Math.floor(Math.random() * ((player.level * 10) + 1)) + 1;
-    return randomNumber;
-}
+//    let randomNumber = Math.floor(Math.random() * ((player.level * 10) + 1)) + 1;
+//    return randomNumber;
+//}
 
 btnSubmit.onclick = function (e) {
-    const guessNumber = document.getElementById("numberGuess").value;
-    while (guess != 5) {
+    const guessNumber = parseInt(document.getElementById("numberGuess").value);
+
     if (guessNumber > randomNumber) {
-        guess++;
+        guessChance--;
         alert("Try a smaller number");
     }
     else if (guessNumber < randomNumber) {
-        guess++;
+        guessChance--;
         alert("Try a greater number");
     }
     else {
         alert("Congratulations!");
+        return;
     }
-    }
-    if (guess === 5) {
+    
+    if (guessChance === 0) {
         alert("Game Over");
         return false;
     }
