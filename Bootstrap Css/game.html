@@ -36,17 +36,18 @@
         <h2 class="display-5 fw-bold text-body-emphasis">Game Started</h2>
         <div class="col-lg-6 mx-auto">
             <ul class="txt-game">
-                <li><strong>Level: 1</strong></li>
-                <li><strong>Guess Chance: 5</strong></li>
-                <li><strong>Time: 30 second</strong></li>
+                <li><strong id="level">Level: 1</strong></li>
+                <li><strong id="guessChance">Guess Chance: 5</strong></li>
+                <li><strong id="time">Time: 30 second</strong></li>
             </ul>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center">
                 <div class="input-group input-group-sm mb-3" style="max-width: 200px;">
                     <span class="input-group-text" id="inputGroup-sizing-sm"><strong>Number Guess</strong></span>
-                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <input id="numberGuess" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
             </div>
-            <a href="game.html" class="btn btn-outline-secondary btn-lg px-4"><span><strong>Submit</strong></span></a>
+           <!--Submit Button-->
+            <button id="btnSubmit" class="btn btn-primary">Submit</button>
             <div class="card text-center">
                 <div class="card-header bg-warning text-dark">
                     Message
@@ -68,5 +69,7 @@
             </ul>
         </footer>
     </div>
+    <!--Js-->
+    <script src="player.js"></script>
 </body>
 </html>
